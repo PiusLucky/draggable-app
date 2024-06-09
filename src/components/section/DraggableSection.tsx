@@ -20,7 +20,7 @@ export default function DraggableSection({
   isDragged,
 }: IProps) {
   return (
-    <div className="hover:cursor-move select-none">
+    <div className="hover:cursor-move hover:opacity-50 transition-opacity duration-150 select-none">
       {isDragged && !!activeDragItem && (
         <div>
           <div className="bg-[#1E9BF0] h-[3px] w-full relative">
